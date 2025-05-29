@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deret Geometri</title>
+</head>
+<body>
+  <h1>Deret Geometri</h1>
+  <div>
+    <label>Suku Berapa Yang Akan Dicari (n): </label><br>
+    <input type="number" id="n" min="1" value="1" placeholder="Suku ke-n"><br>
+  </div>
+    
+  <div>
+    <label>Dimulai Dari (a): </label><br>
+    <input type="number" id="a" value="1" placeholder="Suku pertama"><br>
+  </div>
+    
+  <div>
+    <label>Berapa Rasio/Selisih Antar Suku (r): </label><br>
+    <input type="number" id="r" value="2" placeholder="Rasio"><br>
+  </div>
+    
+  <button onclick="hitungGeometri()" style="margin-top: 15px; padding: 8px 15px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+    Hitung Deret
+  </button>
+    
+  <div id="hasil" style="margin-top: 20px; font-size: 18px;"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menentukan jarak Tempuh Mobil</title>
+</head>
+<body>
+  <h1>Menentukan jarak Tempuh Mobil</h1>
+  <div style="margin-bottom: 15px;">
+    <label for="kecepatan">Masukkan Kecepatan (KM/JAM) = </label>
+    <input type="number" id="kecepatan" step="0.1" min="0" placeholder="Kecepatan">
+  </div>
+    
+  <div style="margin-bottom: 15px;">
+    <label for="waktu">Masukkan Waktu Tempuh (JAM) = </label>
+    <input type="number" id="waktu" step="0.1" min="0" placeholder="Waktu">
+  </div>
+    
+  <button onclick="hitungJarak()" style="padding: 8px 15px; border: none; cursor: pointer;">
+    Hitung Jarak
+  </button>
+    
+  <div id="hasil" style="margin-top: 20px; font-size: 18px; font-weight: bold;"></div>
+  <script src="script.js"></script>
+</body>
+</html>

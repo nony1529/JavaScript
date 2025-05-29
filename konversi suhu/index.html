@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Konversi Suhu</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Konversi Suhu</h1>
+    <p class="description">
+      Konversikan nilai suhu antara Celsius (°C), Fahrenheit (°F), dan Kelvin (K).
+      Masukkan nilai suhu, pilih satuan asal dan tujuan, lalu klik tombol Konversi.
+    </p>
+    <div class="input-group">
+      <label for="temperature">Masukkan Nilai Suhu</label>
+      <input type="number" id="temperature" placeholder="Contoh: 100" step="any">
+    </div>    
+    <div class="input-group">
+      <label for="from-unit">Konversi Dari</label>
+      <select id="from-unit">
+        <option value="celsius">Celsius (°C)</option>
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="kelvin">Kelvin (K)</option>
+      </select>
+    </div>    
+    <div class="input-group">
+      <label for="to-unit">Konversi Ke</label>
+      <select id="to-unit">
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="celsius">Celsius (°C)</option>
+        <option value="kelvin">Kelvin (K)</option>
+      </select>
+    </div>
+    <button onclick="convertTemperature()">Konversi Suhu</button>    
+    <div class="result">
+      <h3>Hasil Konversi:</h3>
+      <div class="result-value" id="result">-</div>
+      <div class="conversion-details">
+        <h4>Rumus Konversi:</h4>
+        <div class="formula" id="formula">Pilih satuan untuk melihat rumus</div>
+        <p>Konversi suhu adalah proses mengubah nilai suhu dari satu skala pengukuran ke skala lainnya.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Program Konversi Suhu &copy; 2023</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

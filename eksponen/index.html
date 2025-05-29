@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menghitung Eksponen</title>
+</head>
+<body>
+  <h1>Menghitung Eksponen</h1>
+  <div>
+    <label for="basis">Masukan Bilangan Pokok/Basis = </label>
+    <input type="number" id="basis" required>
+  </div>
+    
+  <div>
+    <label for="pangkat">Masukan Bilangan Pangkat = </label>
+    <input type="number" id="pangkat" required>
+  </div>
+    
+  <div>
+    <button onclick="hitungPangkat()">Hitung</button>
+  </div>
+    
+  <div id="hasil"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+    <script>
+        function hitungPangkat() {
+            // Ambil nilai basis dan pangkat dari input
+            const basis = parseInt(document.getElementById('basis').value);
+            const pangkat = parseInt(document.getElementById('pangkat').value);
+            
+            // Validasi input
+            if (isNaN(basis) || isNaN(pangkat)) {
+                alert('Mohon masukkan bilangan yang valid!');
+                return;
+            }
+            
+            // Hitung hasil pemangkatan
+            const hasil = Math.pow(basis, pangkat);
+            
+            // Tampilkan hasil
+            const hasilDiv = document.getElementById('hasil');
+            hasilDiv.innerHTML = `
+                <div>Hasilnya Adalah = ${hasil}</div>
+                <div>${basis}<sup>${pangkat}</sup> = ${hasil}</div>
+            `;
+        }
+    </script>
+</body>
+</html>

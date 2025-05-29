@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konversi Radian Ke Gradien</title>
+</head>
+<body>
+  <h1>Konversi Radian Ke Gradien</h1>
+  <div>
+    <label>Masukkan Sudut dalam Radian: </label>
+    <input type="number" id="radian" step="0.01" placeholder="Contoh: 0.7854">
+    <button onclick="konversi()">Konversi</button>
+  </div>
+    
+  <div id="hasil" style="margin-top: 20px; font-size: 18px; font-weight: bold;"></div>
+    
+  <div style="margin-top: 30px; border-top: 1px solid #ccc; padding-top: 20px;">
+    <h3>Informasi Tambahan:</h3>
+    <ul>
+      <li>Gradien (m) = tan(θ) di mana θ adalah sudut dalam radian</li>
+      <li>1 radian ≈ 57.2958 derajat</li>
+      <li>π radian (≈3.1416) = 180 derajat</li>
+      <li>π/2 radian (≈1.5708) = 90 derajat</li>
+      <li>π/4 radian (≈0.7854) = 45 derajat (gradien = 1)</li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

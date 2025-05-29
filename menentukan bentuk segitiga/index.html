@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jenis Segitiga</title>
+</head>
+<body>
+  <h1>Menentukan Jenis Segitiga Berdasarkan Sisi dan Sudut</h1>
+  <label for="sisi1">Masukan Panjang Sisi 1:</label>
+    <input type="number" id="sisi1" min="1" placeholder="Sisi 1"><br>
+    
+    <label for="sisi2">Masukan Panjang Sisi 2:</label>
+    <input type="number" id="sisi2" min="1" placeholder="Sisi 2"><br>
+    
+    <label for="sisi3">Masukan Panjang Sisi 3:</label>
+    <input type="number" id="sisi3" min="1" placeholder="Sisi 3"><br>
+    
+    <button onclick="tentukanSegitiga()">Tentukan Jenis Segitiga</button>
+    
+    <div id="hasil"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+<script>
+        function tentukanSegitiga() {
+            // Ambil nilai input
+            const a = parseInt(document.getElementById('sisi1').value);
+            const b = parseInt(document.getElementById('sisi2').value);
+            const c = parseInt(document.getElementById('sisi3').value);
+            
+            // Validasi input
+            if (isNaN(a) || isNaN(b) || isNaN(c) || a <= 0 || b <= 0 || c <= 0) {
+                alert('Masukkan bilangan positif untuk semua sisi!');
+                return;
+            }
+            
+            // Buat salinan nilai untuk diolah
+            let sisiA = a;
+            let sisiB = b;
+            let sisiC = c;
+            
+            // Urutkan sisi sehingga sisiC adalah sisi terpanjang
+            if (sisiA > sisiC) {
+                [sisiA, sisiC] = [sisiC, sisiA];
+            }
+            if (sisiB > sisiC) {
+                [sisiB, sisiC] = [sisiC, sisiB];
+            }
+            
+            const hasilElement = document.getElementById('hasil');
+            hasilElement.innerHTML = ''; // Bersihkan hasil sebelumnya
+            
+            // Cek apakah bisa membentuk segitiga
+            if (sisiC >= sisiA + sisiB) {
+                hasilElement.innerHTML = '<p>Ketiga Nilai Sisi Ini Tidak Membentuk Jenis Segitiga Apapun</p>';
+                return;
+            }
+            
+            // Tentukan jenis segitiga berdasarkan sisi
+            let jenisSisi = '';
+            if (sisiA === sisiB && sisiB === sisiC) {
+                jenisSisi = 'Segitiga Sama Sisi';
+            } else if (sisiA === sisiB || sisiB === sisiC || sisiA === sisiC) {
+                jenisSisi = 'Segitiga Sama Kaki';
+            } else {
+                jenisSisi = 'Segitiga Sembarang';
+            }
+            
+            // Tentukan jenis segitiga berdasarkan sudut
+            let jenisSudut = '';
+            const cKuadrat = sisiC * sisiC;
+            const abKuadrat = (sisiA * sisiA) + (sisiB * sisiB);
+            
+            if (cKuadrat === abKuadrat) {
+                hasilElement.innerHTML = `
+                    <p>Ketiga Nilai Sisi Ini Merupakan Triple Pythagoras Dan Membentuk Segitiga Siku-Siku</p>
+                    <p>Berdasarkan Sisinya, Segitiga Ini Merupakan Jenis = ${jenisSisi}</p>
+                `;
+                return;
+            } else if (cKuadrat > abKuadrat) {
+                jenisSudut = 'Sudut Tumpul';
+            } else {
+                jenisSudut = 'Sudut Lancip';
+            }
+            
+            // Tampilkan hasil
+            hasilElement.innerHTML = `
+                <p>Berdasarkan Sisinya, Segitiga Ini Merupakan Jenis = ${jenisSisi}</p>
+                <p>Berdasarkan Sudutnya, Segitiga Ini Merupakan Segitiga Dengan Jenis = ${jenisSudut}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

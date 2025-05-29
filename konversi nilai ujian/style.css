@@ -1,0 +1,48 @@
+body { 
+  font-family: Arial, sans-serif; 
+  max-width: 500px; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+.container { 
+  background-color: #f5f5f5; 
+  padding: 20px; 
+  border-radius: 8px; 
+}
+input, button { 
+  padding: 10px; 
+  margin: 5px 0; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+.result { 
+  margin-top: 15px; 
+  padding: 10px; 
+  border-radius: 4px; 
+  font-weight: bold; }
+.A { 
+  background-color: #4CAF50; 
+  color: white; 
+}
+.B { 
+  background-color: #8BC34A; 
+  color: white; 
+}
+.C { 
+  background-color: #FFC107; 
+  color: black; 
+}
+    
+.D { 
+  background-color: #FF9800; 
+  color: white; 
+}
+    
+.E { 
+  background-color: #F44336; 
+  color: white; 
+}
+.invalid { 
+  background-color: #9E9E9E; 
+  color: white; 
+} 

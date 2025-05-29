@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengurutkan Angka Dari Yang Terkecil Ke Yang Terbesar</title>
+</head>
+<body>
+  <h1>Mengurutkan Angka Dari Yang Terkecil Ke Yang Terbesar</h1>
+  <div style="margin-bottom: 15px;">
+    <label>Berapa Banyak Angka Yang Ingin Di Masukan = </label>
+    <input type="number" id="jumlahAngka" min="1" value="5" placeholder="Jumlah angka">
+    <button onclick="buatInputAngka()">
+      Buat Input
+    </button>
+  </div>
+    
+  <div id="inputContainer" style="margin-bottom: 15px;"></div>
+    
+  <button id="urutkanBtn" onclick="urutkanAngka()">
+    Urutkan Angka
+  </button>
+    
+  <div id="hasil"></div>
+  <script src="script.js"></script>
+</body>
+</html>
