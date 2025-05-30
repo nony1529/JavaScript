@@ -10,7 +10,7 @@ function hitung_jarak(v, t) {
   const hasilDiv = document.getElementById("hasil");
   
   if (isNaN(kecepatan) || isNaN(waktu)) {
-    hasilDiv.innerHTML = "Masukkan nilai yang valid!";
+    hasilDiv.innerHTML = "isi dengan nilai yang benar";
     hasilDiv.style.color = "red";
     return;
   }

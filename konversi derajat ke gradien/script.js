@@ -13,9 +13,9 @@ function konversi() {
   
   let gradien = Math.tan(radian);
   
-  hasilDiv.innerHTML = `${derajat} derajat = ${gradien.toFixed(6)} gradien`;
+  hasilDiv.innerHTML = `${derajat} derajat = ${gradien.toFixed(1)} gradien`;
   
-  hasilDiv.innerHTML += `<br><small>Rumus: tan(${derajat}°) = ${gradien.toFixed(6)}</small>`;
+  hasilDiv.innerHTML += `<br><small>Rumus: tan(${derajat}°) = ${gradien.toFixed(1)}</small>`;
   
   let interpretasi = "";
   if (gradien === 0) {

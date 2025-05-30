@@ -12,5 +12,5 @@ function hitungAkar() {
   const akar = Math.sqrt(angka);
   
   const hasilDiv = document.getElementById('hasil');
-  hasilDiv.innerHTML = `Akar Kuadrat Dari ${angka.toFixed(1)} adalah ${akar.toFixed(3)}`;
+  hasilDiv.innerHTML = `Akar Kuadrat Dari ${angka.toFixed(1)} adalah ${akar.toFixed(2)}`;
 }

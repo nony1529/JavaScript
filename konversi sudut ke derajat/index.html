@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konversi Sudut Ke Derajat</title>
+</head>
+<body>
+  <h1>Konversi Sudut Ke Derajat</h1>
+  <div>
+    <label>Derajat (°):</label>
+    <input type="number" id="derajat" placeholder="0" min="0">
+  </div>
+  <div>
+    <label>Menit ('):</label>
+    <input type="number" id="menit" placeholder="0" min="0" max="59">
+  </div>
+  <div>
+    <label>Detik ("):</label>
+    <input type="number" id="detik" placeholder="0" min="0" max="59">
+  </div>
+  <button onclick="konversiKeDerajat()">Konversi ke Derajat</button>
+  <div>
+    <p>Hasil: <span id="hasil">-</span>°</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

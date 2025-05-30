@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perkalian Eksponen</title>
+</head>
+<body>
+  <h1>Perkalian Eksponen</h1><div>
+    <p>a<sup>m</sup> x b<sup>n</sup> = ?</p>
+    <label>Basis Pembilang (a): </label>
+    <input type="number" id="a" placeholder="a" value="2">
+  </div>
+  <div>
+    <label>Eksponen Pembilang (m): </label>
+    <input type="number" id="m" placeholder="m" value="5">
+  </div>
+  <div>
+    <label>Basis Penyebut (b): </label>
+    <input type="number" id="b" placeholder="b" value="2">
+  </div>
+  <div>
+    <label>Eksponen Penyebut (n): </label>
+    <input type="number" id="n" placeholder="n" value="3">
+  </div>
+  <button onclick="hitung()">Hitung</button>
+  <div>
+    <h3>Hasil:</h3>
+    <p id="hasil">2<sup>5</sup> x 2<sup>3</sup> = 2<sup>2</sup> = 4</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

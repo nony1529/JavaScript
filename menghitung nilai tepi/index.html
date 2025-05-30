@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menghitung Tepi Bawah Dan Tepi Atas</title>
+</head>
+<body>
+  <h1>Menghitung Tepi Bawah Dan Tepi Atas</h1>
+  <div>
+    <label>Batas Bawah Kelas:</label>
+    <input type="number" id="batasBawah" placeholder="Masukkan batas bawah">
+  </div>
+  <div>
+    <label>Batas Atas Kelas:</label>
+    <input type="number" id="batasAtas" placeholder="Masukkan batas atas">
+  </div>
+  <div>
+    <label>Interval Kelas (d):</label>
+    <input type="number" id="interval" placeholder="Masukkan interval" value="1">
+  </div>
+  <button onclick="hitungTepi()">Hitung Tepi Kelas</button>
+  <div id="hasil">
+    <p>Tepi Bawah: <span id="tepiBawah">-</span></p>
+    <p>Tepi Atas: <span id="tepiAtas">-</span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<script>

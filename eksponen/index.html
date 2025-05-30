@@ -25,29 +25,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-    <script>
-        function hitungPangkat() {
-            // Ambil nilai basis dan pangkat dari input
-            const basis = parseInt(document.getElementById('basis').value);
-            const pangkat = parseInt(document.getElementById('pangkat').value);
-            
-            // Validasi input
-            if (isNaN(basis) || isNaN(pangkat)) {
-                alert('Mohon masukkan bilangan yang valid!');
-                return;
-            }
-            
-            // Hitung hasil pemangkatan
-            const hasil = Math.pow(basis, pangkat);
-            
-            // Tampilkan hasil
-            const hasilDiv = document.getElementById('hasil');
-            hasilDiv.innerHTML = `
-                <div>Hasilnya Adalah = ${hasil}</div>
-                <div>${basis}<sup>${pangkat}</sup> = ${hasil}</div>
-            `;
-        }
-    </script>
-</body>
-</html>

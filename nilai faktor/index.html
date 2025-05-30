@@ -16,37 +16,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-    <script>
-        function cariFaktor(angka) {
-            const faktor = [];
-            
-            for (let i = 1; i <= angka; i++) {
-                if (angka % i === 0) {
-                    faktor.push(i);
-                }
-            }
-            
-            return faktor;
-        }
-        
-        function hitungFaktor() {
-            // Ambil nilai input
-            const inputBilangan = document.getElementById('inputBilangan');
-            const angka = parseInt(inputBilangan.value);
-            
-            // Validasi input
-            if (isNaN(angka) || angka < 1) {
-                alert('Masukkan bilangan bulat positif lebih besar dari 0!');
-                return;
-            }
-            
-            // Cari faktor
-            const faktor = cariFaktor(angka);
-            
-            // Tampilkan hasil
-            const hasilElement = document.getElementById('hasil');
-            hasilElement.textContent = `Faktor - Faktor Dari ${angka} Adalah = [${faktor.join(', ')}]`;
-        }
-    </script>
-</body>
-</html>

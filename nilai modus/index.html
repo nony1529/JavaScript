@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menghitung Nilai Modus</title>
+</head>
+<body>
+  <h1>Menghitung Nilai Modus</h1>
+  <div>
+    <label>Masukkan nilai (pisahkan dengan koma):</label>
+    <input type="text" id="nilaiInput" value="75,80,90,75,85,90,75" style="width:100%; padding:8px; margin:10px 0;">
+  </div>
+  <button onclick="hitungModus()" style="background:#4CAF50; color:white; border:none; padding:10px; width:100%; cursor:pointer;">
+    Hitung Modus
+  </button>
+  <div id="hasil" style="margin-top:20px; padding:15px; background:#f0f0f0; border:1px solid #ddd;">
+    <h2>Hasil:</h2>
+    <p>Modus: <span id="modusResult">-</span></p>
+    <p>Frekuensi: <span id="frekuensiResult">-</span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mencari rasio</title>
+</head>
+<body>
+  <h1>Mencari Rasio Barisan Geometri</h1>
+  <div>
+    <label>Suku ke-1 (a):</label>
+    <input type="number" id="a" placeholder="Suku pertama" value="3">
+  </div>
+  <div>
+    <label>Suku ke-n (Un):</label>
+    <input type="number" id="un" placeholder="Suku ke-n" value="48">
+  </div>
+  <div>
+    <label>Posisi suku ke-n (n):</label>
+    <input type="number" id="n" placeholder="Posisi suku" value="5">
+  </div>
+  <button onclick="hitungRasio()">Hitung Rasio (r)</button>
+  <div>
+    <h3>Hasil:</h3>
+    <p id="hasil">Rasio (r) = (48 / 3)<sup>1/(5-1)</sup> = (16)<sup>1/4</sup> = 2</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

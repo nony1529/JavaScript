@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menghitung Rata-Rata</title>
+</head>
+<body>
+  <h1>Menghitung Rata-Rata</h1>
+  <div>
+    <label>Jumlah nilai:</label>
+    <input type="number" id="jumlah" min="1" value="3">
+    <button onclick="buatInput()">Buat Input</button>
+  </div>
+  <div id="input-container"></div>
+  <div>
+    <button onclick="hitung()" style="margin-top:20px; padding:8px 15px;">Hitung</button>
+  </div>
+  <div id="hasil" style="margin-top:20px; font-size:18px;">
+    <p>Jumlah: <span id="total">0</span></p>
+    <p>Rata-rata: <span id="rata">0</span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

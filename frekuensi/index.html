@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frekuensi</title>
+</head>
+<body>
+  <h1>Menghitung Nilai Frekuensi</h1>
+  <div>
+    <label>Masukkan nilai (pisahkan dengan koma):</label>
+    <input type="text" id="nilaiInput" value="75,80,90,75,85,90,75" style="width: 100%; padding: 8px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;">
+    <button onclick="hitungFrekuensi()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px;">Hitung Frekuensi</button>
+  </div>
+  <div id="hasil" style="margin-top: 20px; border: 1px solid #ddd; padding: 15px; border-radius: 4px;">
+    <h2 style="margin-top: 0;">Hasil Perhitungan Frekuensi:</h2>
+    <table id="tabelFrekuensi" style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="border: 1px solid #ddd; padding: 8px;">Nilai</th>
+          <th style="border: 1px solid #ddd; padding: 8px;">Frekuensi</th>
+        </tr>
+      </thead>
+      <tbody id="tabelBody"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

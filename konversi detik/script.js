@@ -3,7 +3,7 @@ function hitungKonversi() {
   const nilai = parseInt(inputDetik.value);
   
   if (isNaN(nilai) || nilai < 0) {
-    alert('Masukkan angka positif yang valid');
+    alert('Masukkan angka positif dengan benar');
     return;
   }
   

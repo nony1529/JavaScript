@@ -20,33 +20,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-    <script>
-        function analisisTeks() {
-            // Ambil nilai input
-            const inputTeks = document.getElementById('inputTeks');
-            const teks = inputTeks.value;
-            
-            // Hitung jumlah karakter
-            const jumlah = teks.length;
-            let jumlahKonsonan = 0;
-            let hurufKonsonan = '';
-            
-            // Loop melalui setiap karakter
-            for (let i = 0; i < teks.length; i++) {
-                const karakter = teks[i];
-                // Cek jika karakter bukan vokal (termasuk huruf besar dan kecil)
-                if (!'aiueoAIUEO'.includes(karakter)) {
-                    jumlahKonsonan++;
-                    hurufKonsonan += karakter + ' ';
-                }
-            }
-            
-            // Tampilkan hasil
-            document.getElementById('jumlahKarakter').textContent = jumlah;
-            document.getElementById('jumlahKonsonan').textContent = jumlahKonsonan;
-            document.getElementById('hurufKonsonan').textContent = hurufKonsonan;
-        }
-    </script>
-</body>
-</html>
